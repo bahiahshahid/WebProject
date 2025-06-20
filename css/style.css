@@ -1,0 +1,51 @@
+body {
+      color: #dcdada;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+.title {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #1e5799, #2ce0bf, #75bf38);
+  background-size: 500px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  background-color: #2A2C3B;
+  color: #FFFFFF;
+}
+
+.muted-text {
+  color: #A9A9A9;
+}
+
+.accent-pink {
+  color: #FF2E88;
+}
+
+.neon-blue {
+  color: #00BFFF;
+}
+
+.purple {
+  color: #7A5FFF;
+}
+
+.orange {
+  color: #FF8C00;
+}
+
+.badge-alert {
+  background-color: #FF2E88;
+}
+
+ table img {
+  width: 50px;
+  height: auto;
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post</title>
+    <!--bootstrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monomaniac+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--chartjs-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- style.css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+    body {
+      background-color: #1A1C2C;
+      color: #FFFFFF;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .title1 {
+      font-family: "Monomaniac One", sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: transparent;
+      background: #FFFFFF;
+      background-size: 500px 100%;
+      background-clip: text;
+    }
+    .card {
+      background-color: #2B2D42;
+      border: none;
+      border-radius: 15px;
+      color: #FFFFFF;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+    }
+    .btn-primary {
+      background-color: #00BFFF;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #FF2E88;
+    }
+  </style>
+</head>
+
+<body>
+
+    <!--header-->
+<div class="container my-4">
+    <div class="title">Social Media Analytics</div>
+</div>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <img src="img/logo.png" alt="logo" width="75px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="post.html">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="report.html">Report</a>
+        </li>
+      </ul>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+        <label class="form-check-label" for="darkModeToggle" id="themeLabel">Dark Mode</label>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--content-->
+  <div class="container mt-4">
+    <h2 class="title1 text-center mb-5">Top Social Media Thumbnails</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://i.pinimg.com/736x/6c/8a/6e/6c8a6e96e76ef109bf0194d5a474d96d.jpg" class="card-img-top" alt="Post Thumbnail 1">
+          <div class="card-body">
+            <h5 class="card-title">Instagram Reel</h5>
+            <p class="card-text">Learning creative personality gained over 1M views.</p>
+            <a href="report.html" class="btn btn-primary"><i class="fa-brands fa-instagram"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://i.pinimg.com/736x/21/7e/79/217e796357a341e06253b8edf6402499.jpg" class="card-img-top" alt="Post Thumbnail 2">
+          <div class="card-body">
+            <h5 class="card-title">YouTube Review</h5>
+            <p class="card-text">Secret websites to grow faster — featured on trending.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-youtube"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://i.pinimg.com/736x/0a/f4/3d/0af43d3632446f50c07cbaecf0715300.jpg" class="card-img-top" alt="Post Thumbnail 3">
+          <div class="card-body">
+            <h5 class="card-title">TikTok Comedy Skit</h5>
+            <p class="card-text">Short skit that got 500k shares in 24 hours on TikTok.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-tiktok"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0GmY_v0JSMVbNQTjiXlIy6i6iBSH1PAANg&s" class="card-img-top" alt="Post Thumbnail 4">
+          <div class="card-body">
+            <h5 class="card-title">Facebook Community Post</h5>
+            <p class="card-text">Creative marketing ideas in local FB group.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-facebook"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://i.pinimg.com/736x/da/7b/35/da7b3503300b07fda395ba5b11b6dbda.jpg" class="card-img-top" alt="Post Thumbnail 5">
+          <div class="card-body">
+            <h5 class="card-title">X (Twitter) Thread</h5>
+            <p class="card-text">Viral thread on productivity hacks reached 1.2M impressions.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-x-twitter"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100">
+          <img src="https://i.pinimg.com/736x/eb/ec/40/ebec40750963b9ae4ee78645d2a1ef6a.jpg" class="card-img-top" alt="Post Thumbnail 6">
+          <div class="card-body">
+            <h5 class="card-title">LinkedIn Growth Post</h5>
+            <p class="card-text">Professional milestone update gained 3k+ reactions in 48 hours.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i> See more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--footer-->
+  <footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <div class="mb-2">
+      <a href="#" class="text-light me-3 text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-light me-3 text-decoration-none"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-light me-3 text-decoration-none"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-light text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Social Media Analytics. All rights reserved.</p>
+  </div>
+</footer>
+
+<!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  
+<!--darkmode script-->
+    <script>
+        function setTheme(theme){
+            document.documentElement.setAttribute("data-bs-theme", theme);
+            localStorage.setItem("theme",theme);
+            document.getElementById("themeLabel").innerText =
+                theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        }
+
+        document
+            .getElementById("darkModeToggle")
+            .addEventListener("change", function (event) {
+                if (event.target.checked) {
+                    setTheme("dark");
+                } else {
+                    setTheme("")
+                }
+            });
+
+            window.onload = function () {
+                let savedTheme = localStorage.getItem("theme");
+                if(savedTheme) {
+                    setTheme(savedTheme);
+                    if (savedTheme === "dark") {
+                        document.getElementById("darkModeToggle").checked = true;
+                    }
+                }
+            }
+    </script>
+</body>
+</html>
